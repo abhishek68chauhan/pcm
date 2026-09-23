@@ -25,6 +25,19 @@ function Dashboard({ setToken }) {
           },
         }
       );
+      // console.log(response.data);
+      // let data = response.data;
+      // let che = data.map((day) => { return day.chemistry })
+      // let totalChe = che.reduce((sum, marks) => marks + sum)
+      // console.log("Total hour in CHE: " + totalChe)
+
+      // let mat = data.map((day) => { return day.mathematics })
+      // let totalMat = mat.reduce((sum, marks) => marks + sum)
+      // console.log("Total hour in MAT: " + totalMat)
+
+      // let phy = data.map((day) => { return day.physics })
+      // let totalPhy = phy.reduce((sum, marks) => marks + sum)
+      // console.log("Total hour in PHY: " + totalPhy)
 
       setStudies(response.data);
     } catch (error) {
@@ -138,6 +151,7 @@ function Dashboard({ setToken }) {
                   Physics:{" "}
                   {study.physics} min
                 </span>
+
 
                 <span>
                   Chemistry:{" "}
