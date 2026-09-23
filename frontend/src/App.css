@@ -1,0 +1,195 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form {
+  width: 380px;
+  padding: 30px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+}
+
+.auth-form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #0d1117;
+  color: white;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+.auth-form button,
+.study-form button {
+  width: 100%;
+  padding: 12px;
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.auth-form p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.auth-form a {
+  color: #58a6ff;
+}
+
+.navbar {
+  min-height: 65px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.navbar button {
+  margin-left: 20px;
+  padding: 8px 15px;
+  border: 1px solid #30363d;
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.container > h1 {
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  padding: 25px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+}
+
+.stat-card h3 {
+  color: #8b949e;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.study-form {
+  max-width: 500px;
+  padding: 25px;
+  margin-bottom: 40px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+}
+
+.study-form h2 {
+  margin-bottom: 20px;
+}
+
+.study-form label {
+  display: block;
+  margin: 15px 0 7px;
+}
+
+.study-form input {
+  width: 100%;
+  padding: 10px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  color: white;
+  border-radius: 5px;
+}
+
+.study-form button {
+  margin-top: 20px;
+}
+
+.activity {
+  margin-bottom: 40px;
+}
+
+.heatmap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 20px;
+  padding: 20px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+}
+
+.day {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background: #21262d;
+}
+
+.level-1 {
+  background: #0e4429;
+}
+
+.level-2 {
+  background: #006d32;
+}
+
+.level-3 {
+  background: #26a641;
+}
+
+.level-4 {
+  background: #39d353;
+}
+
+.activity-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-top: 10px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+@media (max-width: 700px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .container {
+    width: 94%;
+  }
+}
