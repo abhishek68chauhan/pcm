@@ -58,9 +58,7 @@ export const addQuestion = async (req, res) => {
 
 export const getQuestions = async (req, res) => {
   try {
-    const questions = await Question.find({
-      userId: req.userId,
-    }).sort({
+    const questions = await Question.find().sort({
       createdAt: -1,
     });
 
