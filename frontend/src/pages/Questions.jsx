@@ -46,9 +46,9 @@ function Questions() {
     filter === "All"
       ? questions
       : questions.filter(
-          (question) =>
-            question.subject === filter
-        );
+        (question) =>
+          question.subject === filter
+      );
 
   const solvedCount =
     questions.filter(
