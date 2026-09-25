@@ -46,6 +46,25 @@ function Dashboard({ setToken }) {
 
   const totalHours = (totalMinutes / 60).toFixed(1);
 
+  const physicsMinutes = studies.reduce(
+  (sum, study) => sum + study.physics,
+  0
+);
+
+const chemistryMinutes = studies.reduce(
+  (sum, study) => sum + study.chemistry,
+  0
+);
+
+const mathematicsMinutes = studies.reduce(
+  (sum, study) => sum + study.mathematics,
+  0
+);
+
+const physicsHours = (physicsMinutes / 60).toFixed(1);
+const chemistryHours = (chemistryMinutes / 60).toFixed(1);
+const mathematicsHours = (mathematicsMinutes / 60).toFixed(1);
+
   // ---------------- HEATMAP DATA ----------------
 
   const currentYear = new Date().getFullYear();
@@ -132,10 +151,36 @@ function Dashboard({ setToken }) {
             <p>{studies.length}</p>
           </div>
 
-          <div className="stat-card">
+          {/* <div className="stat-card">
             <h3>Total Hours</h3>
             <p>{totalHours}</p>
-          </div>
+          </div> */}
+          <div className="stat-card total-hours-card">
+
+  <h3>Total Hours</h3>
+
+  <p>{totalHours}</p>
+
+  <div className="subject-breakdown">
+
+    <div>
+      <span>Physics</span>
+      <strong>{physicsHours}h</strong>
+    </div>
+
+    <div>
+      <span>Chemistry</span>
+      <strong>{chemistryHours}h</strong>
+    </div>
+
+    <div>
+      <span>Mathematics</span>
+      <strong>{mathematicsHours}h</strong>
+    </div>
+
+  </div>
+
+</div>
 
           <div className="stat-card">
             <h3>Sessions</h3>

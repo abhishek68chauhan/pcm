@@ -328,11 +328,6 @@
   border-radius: 6px;
 }
 
-
-/* ==============================
-   MOBILE
-================================ */
-
 @media (max-width: 700px) {
 
   .stats {
@@ -351,4 +346,67 @@
     display: none;
   }
 
+}
+
+
+.total-hours-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.total-hours-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.subject-breakdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 190px;
+  padding: 12px;
+
+  background: #161b22;
+  color: white;
+
+  border: 1px solid #30363d;
+  border-radius: 8px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+  display: none;
+  z-index: 100;
+}
+
+.total-hours-card:hover .subject-breakdown {
+  display: block;
+}
+
+.subject-breakdown div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+}
+
+.subject-breakdown span {
+  color: #8b949e;
+  font-size: 14px;
+}
+
+.subject-breakdown strong {
+  color: white;
+  font-size: 14px;
+}
+
+.total-hours-card:hover .subject-breakdown {
+  display: block;
+}
+
+.subject-breakdown div {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
 }
