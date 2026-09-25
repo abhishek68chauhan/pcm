@@ -83,8 +83,7 @@ export const submitAnswer = async (req, res) => {
     const { answer } = req.body;
 
     const question = await Question.findOne({
-      _id: id,
-      userId: req.userId,
+      _id: id
     });
 
     if (!question) {
@@ -108,7 +107,6 @@ export const submitAnswer = async (req, res) => {
     });
   } catch (error) {
     console.error("SUBMIT ANSWER ERROR:", error);
-
     res.status(500).json({
       message: "Failed to submit answer",
     });
