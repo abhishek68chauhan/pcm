@@ -405,3 +405,24 @@
   justify-content: space-between;
   padding: 6px 0;
 }
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.question-bank-btn {
+  display: inline-block;
+  padding: 7px 12px;
+  background: #238636;
+  color: white;
+  border: 1px solid #2ea043;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.question-bank-btn:hover {
+  background: #2ea043;
+}

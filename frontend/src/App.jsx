@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import { useState } from "react";
+import Questions from "./pages/Questions";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token'))
@@ -52,6 +53,10 @@ function App() {
               <Navigate to="/login" replace />
             )
           }
+        />
+        <Route
+          path="/questions"
+          element={<Questions />}
         />
 
       </Routes>
