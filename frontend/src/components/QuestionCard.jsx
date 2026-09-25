@@ -51,9 +51,8 @@ function QuestionCard({ question, onSolved }) {
 
   return (
     <div
-      className={`question-card ${
-        correct ? "solved-question" : ""
-      }`}
+      className={`question-card ${correct ? "solved-question" : ""
+        }`}
     >
       <div className="question-top">
         <span className="subject">
